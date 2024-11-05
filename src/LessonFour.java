@@ -53,7 +53,7 @@ public class LessonFour {
         }
     }
 
-    public void printBooleanValue(int number) {
+    public boolean printBooleanValue(int number) {
         boolean check;
         if (number >= 0) {
             check = true;
@@ -62,6 +62,7 @@ public class LessonFour {
             check = false;
             System.out.println(check);
         }
+        return check;
     }
 
     public void printSeveralStrings(String phrase, int i) {
