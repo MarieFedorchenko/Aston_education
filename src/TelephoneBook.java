@@ -17,9 +17,6 @@ public class TelephoneBook {
     }
 
     public List<String> get(String name) {
-        if (phoneBook.get(name) == null || phoneBook.get(name).isEmpty()) {
-            System.out.println("Не найден номер.");
-        }
         return phoneBook.getOrDefault(name, new ArrayList<>());
     }
 
