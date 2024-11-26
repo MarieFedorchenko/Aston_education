@@ -10,12 +10,14 @@ public class Factorial {
                 factorial *= i;
             }
         }
+
         if (n < 0) {
             throw new IllegalArgumentException("Факториал отрицательного числа определить нельзя.");
         }
-
+        
         return factorial;
     }
+
 
     public static void main(String[] args) {
 
