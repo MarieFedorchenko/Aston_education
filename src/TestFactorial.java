@@ -5,29 +5,34 @@ public class TestFactorial {
 
     @Test
     public void testPositiveNumber() {
-        assertEquals(24, Factorial.calculateFactorial(4));
+        Factorial factorial = new Factorial();
+        assertEquals(24, factorial.calculateFactorial(4));
     }
 
     @Test
     public void testNegativeNumber() {
+        Factorial factorial = new Factorial();
         assertThrows(IllegalArgumentException.class, () -> {
-            Factorial.calculateFactorial(-1);
+            factorial.calculateFactorial(-1);
         });
     }
 
     @Test
     public void testNumberOne() {
-        assertEquals(1, Factorial.calculateFactorial(1));
+        Factorial factorial = new Factorial();
+        assertEquals(1, factorial.calculateFactorial(1));
     }
 
     @Test
     public void testNumberZero() {
-        assertEquals(1, Factorial.calculateFactorial(0));
+        Factorial factorial = new Factorial();
+        assertEquals(1, factorial.calculateFactorial(0));
     }
 
     @Test
     public void testLargeNumber() {
-        assertEquals(479001600, Factorial.calculateFactorial(12));
+        Factorial factorial = new Factorial();
+        assertEquals(479001600, factorial.calculateFactorial(12));
     }
 
 }

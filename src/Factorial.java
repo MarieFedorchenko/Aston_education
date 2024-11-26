@@ -1,6 +1,6 @@
 public class Factorial {
 
-    public static long calculateFactorial(int n) {
+    public long calculateFactorial(int n) {
 
         long factorial = 1;
 
@@ -19,6 +19,8 @@ public class Factorial {
 
     public static void main(String[] args) {
 
-        System.out.println(calculateFactorial(3));
+        Factorial factorial = new Factorial();
+
+        System.out.println(factorial.calculateFactorial(3));
     }
 }
