@@ -34,5 +34,4 @@ public class TestFactorial {
         Factorial factorial = new Factorial();
         assertEquals(479001600, factorial.calculateFactorial(12));
     }
-
 }
